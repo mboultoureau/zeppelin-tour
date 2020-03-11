@@ -1,0 +1,32 @@
+{
+  "name": "zeppelin-tour",
+  "version": "1.0.0",
+  "description": "Zeppelin Tour is a showcase website for a zeppelin travel company created as part of a project in English during the first year of the Computer Science DUT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mboultoureau/zeppelin-tour.git"
+  },
+  "keywords": [
+    "website",
+    "zeppelin",
+    "english"
+  ],
+  "author": "Mathis Boultoureau, Ronan Renoux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mboultoureau/zeppelin-tour/issues"
+  },
+  "homepage": "https://github.com/mboultoureau/zeppelin-tour#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0"
+  }
+}

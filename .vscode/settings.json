@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/gulpfile.js": true,
+        "**/package-lock.json": true,
+        "**/package.json": true,
+        "**/LICENSE": true,
+        "**/.vscode": true,
+        "**/css/*.min.css": true
+    },
+    "prettier.tabWidth": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "editor.formatOnPaste": true
+}
