@@ -2,10 +2,12 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 /* H2 */
@@ -16,7 +18,8 @@ h2 {
     text-transform: uppercase;
 }
 
-h2::before, h2::after {
+h2::before,
+h2::after {
     content: '';
     background-color: #333;
     width: 30px;
@@ -37,6 +40,7 @@ h2::after {
 h1 {
     font-family: 'Roboto';
     font-weight: 700;
+    margin-right: 900px;
 }
 
 h3 {
@@ -44,6 +48,17 @@ h3 {
     font-weight: 400;
 }
 
+div > div {
+    height: 550px;
+}
+main > div > div > img {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    margin-top: -300px;
+    right: 0px;
+    max-width: 1000px;
+}
 nav {
     position: fixed;
     top: 0;
@@ -113,7 +128,6 @@ main > div {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    border-bottom-right-radius: 100% 80%;
 }
 main > div > div > h1 {
     color: #b4e0ff;
@@ -137,7 +151,6 @@ section {
     align-items: center;
     padding: 20px;
 }
-
 
 /* ABOUT US */
 @media (min-width: 700px) {
@@ -170,7 +183,7 @@ section {
 }
 
 .reviews article {
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     min-height: 350px;
     min-width: 300px;
     margin: 10px;
@@ -186,7 +199,7 @@ section {
     display: flex;
     align-items: center;
     height: 66px;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid #ccc;
     padding: 0 10px;
 }
 
