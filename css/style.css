@@ -10,7 +10,13 @@ body {
     width: 100%;
 }
 
-/* H2 */
+/* TITLES */
+h1 {
+    font-weight: 700;
+    position: relative;
+    width: fit-content;
+}
+
 h2 {
     text-align: center;
     position: relative;
@@ -37,19 +43,16 @@ h2::after {
     top: calc(50% - 2px);
 }
 
-h1 {
-    font-weight: 700;
-    position: relative;
-}
-
 h3 {
     font-weight: 400;
 }
 
-div > div {
+/* HEADER */
+header > div {
     height: 550px;
 }
 
+/* NAV */
 nav {
     position: fixed;
     top: 0;
@@ -102,7 +105,7 @@ nav > div > img {
 }
 
 /* SVG ZEPPELIN */
-main > div > div > img {
+.home-page header img {
     position: absolute;
     width: 65%;
     height: auto;
@@ -113,36 +116,36 @@ main > div > div > img {
 }
 
 @media screen and (max-width: 1400px) {
-    main > div > div > img {
+    .home-page header img {
         top: 330px;
     }
 }
 
 @media screen and (max-width: 1250px) {
-    main > div > div > img {
+    .home-page header img {
         top: 370px;
     }
 }
 
 @media screen and (max-width: 1050px) {
-    main > div > div > img {
+    .home-page header img {
         top: 420px;
     }
 }
 
 @media screen and (max-width: 920px) {
-    main > div > div > img {
+    .home-page header img {
         width: 80%;
         margin-right: 10%;
         margin-left: 10%;
         top: 450px;
     }
-    main > div > div > h1 {
+    .home-page header h1 {
         width: 100%;
         top: -70px;
         text-align: center;
     }
-    main > div > div > h3 {
+    .home-page header h3 {
         width: 100%;
         top: -70px;
         margin-left: -25px;
@@ -150,28 +153,28 @@ main > div > div > img {
     }
 }
 @media screen and (max-width: 750px) {
-    main > div > div > img {
+    .home-page header img {
         top: 480px;
     }
 }
 
 @media screen and (max-width: 650px) {
-    main > div > div > img {
+    .home-page header img {
         top: 530px;
     }
-    main > div > div > h1,
-    main > div > div > h3 {
+    .home-page header h1,
+    .home-page header h3 {
         top: -40px;
     }
 }
 
 @media screen and (max-width: 520px) {
-    main > div > div > img {
+    .home-page header img {
         top: 580px;
     }
 }
 
-main > div {
+.home-page header {
     background: linear-gradient(
         90deg,
         rgba(2, 0, 36, 1) 0%,
@@ -183,7 +186,8 @@ main > div {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-main > div > div > h1 {
+
+.home-page header h1 {
     color: #b4e0ff;
     margin-top: 220px;
     font-size: 3em;
@@ -192,14 +196,15 @@ main > div > div > h1 {
     left: 5%;
 }
 
-main > div > div > h3 {
-    color: #ffffff;
+.home-page header h3 {
+    color: #fff;
     margin-top: 280px;
     font-size: 1.3em;
     position: absolute;
     left: 5%;
 }
 
+/* SECTION */
 section {
     display: flex;
     flex-direction: column;
@@ -231,7 +236,7 @@ section {
     }
 }
 
-/* Review */
+/* REVIEW */
 .reviews {
     display: flex;
     overflow-x: scroll;
@@ -239,7 +244,7 @@ section {
 }
 
 .reviews article {
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     min-height: 350px;
     min-width: 300px;
     margin: 10px;
@@ -255,7 +260,7 @@ section {
     display: flex;
     align-items: center;
     height: 66px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #CCC;
     padding: 0 10px;
 }
 
@@ -343,8 +348,7 @@ iframe {
         justify-content: flex-start;
     }
 
-    .routes-page main,
-    iframe {
+    .routes-page main, iframe {
         min-height: calc(100vh - 122px);
     }
 }
