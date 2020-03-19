@@ -7,7 +7,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /* TITLES */
@@ -57,6 +58,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100vw;
     background: linear-gradient(
         90deg,
@@ -115,6 +117,14 @@ nav > div > img {
     top: 300px;
 }
 
+.home-page header h1 {
+    font-size: 3em;
+}
+
+.home-page header h3 {
+    font-size: 1.3em;
+}
+
 @media screen and (max-width: 1400px) {
     .home-page header img {
         top: 330px;
@@ -170,7 +180,49 @@ nav > div > img {
 
 @media screen and (max-width: 520px) {
     .home-page header img {
-        top: 580px;
+        top: 500px;
+    }
+    header > div {
+        height: 440px;
+    }
+    .home-page header h1 {
+        top: -60px;
+    }
+    .home-page header h3 {
+        top: -80px;
+    }
+    .home-page header h1 {
+        font-size: 2em;
+    }
+    .home-page header h3 {
+        font-size: 1.1em;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h2 {
+        font-size: 1em;
+    }
+    h2::after {
+        right: -35px;
+        width: 25px;
+    }
+    h2::before {
+        left: -35px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home-page header h3 {
+        font-size: 1em;
+    }
+    header > div {
+        height: 360px;
+    }
+    .home-page header img {
+        top: 510px;
     }
 }
 
@@ -190,18 +242,18 @@ nav > div > img {
 .home-page header h1 {
     color: #b4e0ff;
     margin-top: 220px;
-    font-size: 3em;
     letter-spacing: 1px;
     position: absolute;
     left: 5%;
+    padding-right: 8%;
 }
 
 .home-page header h3 {
     color: #fff;
     margin-top: 280px;
-    font-size: 1.3em;
     position: absolute;
     left: 5%;
+    padding-right: 8%;
 }
 
 /* SECTION */
@@ -244,7 +296,7 @@ section {
 }
 
 .reviews article {
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     min-height: 350px;
     min-width: 300px;
     margin: 10px;
@@ -260,7 +312,7 @@ section {
     display: flex;
     align-items: center;
     height: 66px;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid #ccc;
     padding: 0 10px;
 }
 
@@ -348,7 +400,8 @@ iframe {
         justify-content: flex-start;
     }
 
-    .routes-page main, iframe {
+    .routes-page main,
+    iframe {
         min-height: calc(100vh - 122px);
     }
 }
