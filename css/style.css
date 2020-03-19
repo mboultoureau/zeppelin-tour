@@ -38,13 +38,11 @@ h2::after {
 }
 
 h1 {
-    font-family: 'Roboto';
     font-weight: 700;
     margin-right: 900px;
 }
 
 h3 {
-    font-family: 'Roboto';
     font-weight: 400;
 }
 
@@ -93,7 +91,6 @@ nav > div > ul {
 nav > div > ul > a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Roboto';
     font-weight: 300;
     margin-left: 40px;
     font-size: 1.1em;
@@ -171,7 +168,7 @@ section {
 
 @media (min-width: 1000px) {
     .about-us {
-        padding: 100px;
+        padding: 10px 100px;
     }
 }
 
@@ -216,4 +213,79 @@ section {
 
 .reviews article .person span {
     color: #feca57;
+}
+
+/* FOOTER */
+footer {
+    background-color: #3228c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (min-width: 700px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* ROUTES */
+iframe {
+    width: calc(100vw - 15px);
+    min-height: 500px;
+    border: none;
+}
+
+.routes-page main {
+    margin-top: 122px;
+}
+
+.routes {
+    display: flex;
+    flex-direction: column;
+}
+
+.routes div {
+    border-top: 1px solid #333;
+    padding: 0 25px;
+    width: 100%;
+}
+
+.routes div span {
+    color: #feca57;
+}
+
+.routes {
+    padding: 0;
+}
+
+@media (min-width: 1000px) {
+    .routes-page main {
+        display: flex;
+    }
+
+    .routes {
+        min-width: 50vw;
+        justify-content: flex-start;
+    }
+
+    .routes-page main,
+    iframe {
+        min-height: calc(100vh - 122px);
+    }
 }
