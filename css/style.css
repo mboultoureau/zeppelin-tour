@@ -53,59 +53,6 @@ header > div {
     height: 550px;
 }
 
-/* NAV */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(50, 40, 197, 1) 0%,
-        rgba(10, 95, 223, 1) 100%
-    );
-    display: flex;
-    justify-content: space-between;
-    z-index: 10;
-}
-nav > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-flow: nowrap;
-    width: 100%;
-}
-
-nav > div > ul {
-    display: flex;
-    list-style: none;
-    align-items: flex-start;
-    margin-top: 50px;
-    margin-left: -50px;
-}
-
-nav > div > ul > a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 300;
-    margin-left: 40px;
-    font-size: 1.1em;
-    padding: 6px 12px;
-    border-radius: 40px;
-}
-nav > div > ul > a:hover {
-    background-color: #ffffff;
-    color: #3228c5;
-}
-
-nav > div > img {
-    width: 150px;
-    margin-top: 10px;
-    margin-left: 30px;
-}
-
 /* SVG ZEPPELIN */
 .home-page header img {
     position: absolute;
@@ -403,5 +350,170 @@ iframe {
     .routes-page main,
     iframe {
         min-height: calc(100vh - 122px);
+    }
+}
+
+/* MENU MOBILE */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(50, 40, 197, 1) 0%,
+        rgba(10, 95, 223, 1) 100%
+    );
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav > div {
+    display: flex;
+    width: 100%;
+}
+
+nav > div > ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: -50px;
+    flex-direction: row;
+}
+
+nav > div > ul > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    margin-left: 40px;
+    font-size: 1.1em;
+    padding: 6px 12px;
+    border-radius: 40px;
+}
+nav > div > ul > a:hover {
+    background-color: #ffffff;
+    color: #3228c5;
+}
+
+nav > div > img {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#menuToggle input {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    #menuToggle > img {
+        margin-top: -72px;
+        transform: translateX(50vw);
+        margin-left: -80px;
+    }
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 25px;
+        z-index: 1;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+        color: rgba(10, 95, 223, 1);
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.45s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    #menuToggle input:checked ~ span:first-of-type {
+        opacity: 1;
+        background: #232323;
+        transform: rotate(45deg) translate(-2px, -1px);
+    }
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menuToggle input:checked ~ span:first-of-type + span {
+        opacity: 1;
+        background: #232323;
+        transform: rotate(-45deg) translate(-7px, 1px);
+    }
+    #menu {
+        position: absolute;
+        width: 50vw;
+        top: 2px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 100vh;
+
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        margin-top: -450px;
+        font-size: 22px;
+    }
+
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+    nav > div > ul {
+        flex-direction: column;
+    }
+
+    #menuToggle > ul > a {
+        margin-bottom: 50px;
+        margin-left: -10px;
+    }
+    nav {
+        height: 75px;
     }
 }

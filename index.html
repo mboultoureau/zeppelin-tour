@@ -1,124 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zeppelin Tour</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zeppelin Tour</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
-</head>
-
-<body class="home-page">
-    <nav>
-        <div>
-            <img src="img/zeppelin-home.svg" alt="Zeppelin" />
-            <ul>
-                <a href="">
-                    <li>Home</li>
-                </a>
-                <a href="./routes.html">
-                    <li>Routes</li>
-                </a>
-                <a href="">
-                    <li>Reservation</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <header>
+    <body class="home-page">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <img src="img/zeppelin-home.svg" alt="Zeppelin" />
+                <ul id="menu">
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="./routes.html">
+                        <li>Routes</li>
+                    </a>
+                    <a href="">
+                        <li>Reservation</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <header>
+                <div>
+                    <h1>Enjoy the ride</h1>
+                    <h3>A zeppelin for every occasion.</h3>
+                    <img src="img/zeppelin-home.svg" alt="Zeppelin" />
+                </div>
+            </header>
+            <section class="about-us">
+                <h2>About us</h2>
+                <div>
+                    <img src="img/zeppelin-home.svg" alt="Zeppelin" />
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Beatae, vel aperiam laborum consequatur eaque
+                        officia quia quas aliquam eveniet, minima tenetur, ab
+                        dignissimos. Quia provident velit, tempore dolores
+                        asperiores quibusdam!
+                    </p>
+                </div>
+                <div class="inverse">
+                    <img src="img/zeppelin-home.svg" alt="Zeppelin" />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Consequatur illo deleniti impedit voluptatum
+                        ipsum, illum quae! Nisi eaque quidem saepe, corporis et,
+                        maxime nobis officiis hic molestias nihil sint sit!
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2>They use our service</h2>
+                <div class="reviews">
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Rem pariatur et ratione doloribus possimus
+                            architecto asperiores consequuntur? Perspiciatis
+                            totam aspernatur harum, odio cupiditate sunt,
+                            aperiam veritatis est, aliquam deleniti accusamus.
+                        </p>
+                        <div class="person">
+                            <img
+                                src="img/profile-picture.jpg"
+                                alt="Profile Picture"
+                            />
+                            <div>
+                                <p>Prénom Nom</p>
+                                <p><span>★</span> 4.9</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Rem pariatur et ratione doloribus possimus
+                            architecto asperiores consequuntur? Perspiciatis
+                            totam aspernatur harum, odio cupiditate sunt,
+                            aperiam veritatis est, aliquam deleniti accusamus.
+                        </p>
+                        <div class="person">
+                            <img
+                                src="img/profile-picture.jpg"
+                                alt="Profile Picture"
+                            />
+                            <div>
+                                <p>Prénom Nom</p>
+                                <p><span>★</span> 4.9</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Rem pariatur et ratione doloribus possimus
+                            architecto asperiores consequuntur? Perspiciatis
+                            totam aspernatur harum, odio cupiditate sunt,
+                            aperiam veritatis est, aliquam deleniti accusamus.
+                        </p>
+                        <div class="person">
+                            <img
+                                src="img/profile-picture.jpg"
+                                alt="Profile Picture"
+                            />
+                            <div>
+                                <p>Prénom Nom</p>
+                                <p><span>★</span> 4.9</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
             <div>
-                <h1>Enjoy the ride</h1>
-                <h3>A zeppelin for every occasion.</h3>
-                <img src="img/zeppelin-home.svg" alt="Zeppelin" />
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/routes.html">Routes</a></li>
+                    <li><a href="/reservation.html">Reservations</a></li>
+                </ul>
             </div>
-        </header>
-        <section class="about-us">
-            <h2>About us</h2>
             <div>
-                <img src="img/zeppelin-home.svg" alt="Zeppelin" />
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Beatae, vel aperiam laborum consequatur eaque
-                    officia quia quas aliquam eveniet, minima tenetur, ab
-                    dignissimos. Quia provident velit, tempore dolores
-                    asperiores quibusdam!
-                </p>
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                </ul>
             </div>
-            <div class="inverse">
-                <img src="img/zeppelin-home.svg" alt="Zeppelin" />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Consequatur illo deleniti impedit voluptatum
-                    ipsum, illum quae! Nisi eaque quidem saepe, corporis et,
-                    maxime nobis officiis hic molestias nihil sint sit!
-                </p>
-            </div>
-        </section>
-        <section>
-            <h2>They use our service</h2>
-            <div class="reviews">
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur et ratione doloribus
-                        possimus
-                        architecto asperiores consequuntur? Perspiciatis totam aspernatur harum, odio cupiditate sunt,
-                        aperiam veritatis est, aliquam deleniti accusamus.</p>
-                    <div class="person">
-                        <img src="img/profile-picture.jpg" alt="Profile Picture">
-                        <div>
-                            <p>Prénom Nom</p>
-                            <p><span>★</span> 4.9</p>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur et ratione doloribus
-                        possimus
-                        architecto asperiores consequuntur? Perspiciatis totam aspernatur harum, odio cupiditate sunt,
-                        aperiam veritatis est, aliquam deleniti accusamus.</p>
-                    <div class="person">
-                        <img src="img/profile-picture.jpg" alt="Profile Picture">
-                        <div>
-                            <p>Prénom Nom</p>
-                            <p><span>★</span> 4.9</p>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur et ratione doloribus
-                        possimus
-                        architecto asperiores consequuntur? Perspiciatis totam aspernatur harum, odio cupiditate sunt,
-                        aperiam veritatis est, aliquam deleniti accusamus.</p>
-                    <div class="person">
-                        <img src="img/profile-picture.jpg" alt="Profile Picture">
-                        <div>
-                            <p>Prénom Nom</p>
-                            <p><span>★</span> 4.9</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/routes.html">Routes</a></li>
-                <li><a href="/reservation.html">Reservations</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Follow us</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://twitter.com/">Twitter</a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
