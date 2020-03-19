@@ -410,7 +410,7 @@ nav > div > img {
 @media screen and (max-width: 600px) {
     #menuToggle > img {
         margin-top: -72px;
-        transform: translateX(50vw);
+        transform: translateX(46vw);
         margin-left: -80px;
     }
     #menuToggle {
@@ -485,11 +485,8 @@ nav > div > img {
         margin: -100px 0 0 -50px;
         padding: 50px;
         padding-top: 100vh;
-
         background: #ededed;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
 
