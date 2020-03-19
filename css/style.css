@@ -1,8 +1,32 @@
-body {
-    background-color: #ffffff;
+html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* H2 */
+h2 {
+    text-align: center;
+    position: relative;
+    color: #333;
+}
+
+h2::before, h2::after {
+    content: '';
+    background-color: #333;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+}
+
+h2::before {
+    left: -70px;
+    top: calc(50% - 2px);
+}
+
+h2::after {
+    right: -70px;
+    top: calc(50% - 2px);
 }
 
 h1 {
@@ -28,6 +52,7 @@ nav {
     );
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 nav > div {
     display: flex;
@@ -98,4 +123,36 @@ main > div > div > h3 {
     margin-top: -25px;
     font-size: 1.3em;
     margin-left: 50px;
+}
+
+
+/* ABOUT US */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (min-width: 700px) {
+    .about-us div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us .inverse img {
+        order: 1;
+    }
+
+    .about-us img {
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .about-us {
+        padding: 100px;
+    }
 }

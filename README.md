@@ -11,4 +11,5 @@ However, if you want to enable file compression or automatic reloading in develo
 
 1. Install [Node.js](https://nodejs.org)
 2. Install Gulp globally with the following command : `npm install gulp-cli -g`
-3.
+3. Faites la commande `npm install`.
+4. Lancer avec la commande `gulp`.
