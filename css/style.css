@@ -49,14 +49,7 @@ h3 {
 div > div {
     height: 550px;
 }
-main > div > div > img {
-    position: absolute;
-    width: 70%;
-    height: auto;
-    margin-top: -300px;
-    right: 0px;
-    max-width: 1000px;
-}
+
 nav {
     position: fixed;
     top: 0;
@@ -108,8 +101,14 @@ nav > div > img {
     margin-left: 30px;
 }
 
+/* SVG ZEPPELIN */
 main > div > div > img {
+    position: absolute;
     width: 65%;
+    height: auto;
+    margin-top: -300px;
+    right: 0px;
+    max-width: 1000px;
     top: 300px;
 }
 
@@ -131,12 +130,23 @@ main > div > div > img {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 920px) {
     main > div > div > img {
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-        top: 430px;
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        top: 450px;
+    }
+    main > div > div > h1 {
+        width: 100%;
+        top: -70px;
+        text-align: center;
+    }
+    main > div > div > h3 {
+        width: 100%;
+        top: -70px;
+        margin-left: -25px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 750px) {
@@ -148,6 +158,10 @@ main > div > div > img {
 @media screen and (max-width: 650px) {
     main > div > div > img {
         top: 530px;
+    }
+    main > div > div > h1,
+    main > div > div > h3 {
+        top: -40px;
     }
 }
 
@@ -173,15 +187,17 @@ main > div > div > h1 {
     color: #b4e0ff;
     margin-top: 220px;
     font-size: 3em;
-    letter-spacing: 2px;
-    margin-left: 50px;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 5%;
 }
 
 main > div > div > h3 {
     color: #ffffff;
-    margin-top: -25px;
+    margin-top: 280px;
     font-size: 1.3em;
-    margin-left: 50px;
+    position: absolute;
+    left: 5%;
 }
 
 section {
