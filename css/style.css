@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@ h2 {
     text-align: center;
     position: relative;
     color: #333;
+    text-transform: uppercase;
 }
 
 h2::before, h2::after {
@@ -125,9 +130,7 @@ main > div > div > h3 {
     margin-left: 50px;
 }
 
-
-/* ABOUT US */
-.about-us {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,6 +138,8 @@ main > div > div > h3 {
     padding: 20px;
 }
 
+
+/* ABOUT US */
 @media (min-width: 700px) {
     .about-us div {
         display: flex;
@@ -155,4 +160,47 @@ main > div > div > h3 {
     .about-us {
         padding: 100px;
     }
+}
+
+/* Review */
+.reviews {
+    display: flex;
+    overflow-x: scroll;
+    max-width: calc(100vw - 20px);
+}
+
+.reviews article {
+    border: 1px solid #CCC;
+    min-height: 350px;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.reviews article > p {
+    height: 250px;
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+.reviews article .person {
+    display: flex;
+    align-items: center;
+    height: 66px;
+    border-top: 1px solid #CCC;
+    padding: 0 10px;
+}
+
+.reviews article .person img {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.reviews article .person p {
+    margin: 5px 15px;
+}
+
+.reviews article .person span {
+    color: #feca57;
 }
