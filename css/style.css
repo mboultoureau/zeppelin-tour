@@ -245,12 +245,13 @@ section {
 }
 
 .reviews article {
-    display: none;
     position: absolute;
     border: 1px solid #ccc;
     height: 350px;
     width: 300px;
     margin: 10px;
+
+    transition: top 0.5s, left 0.5s;
 }
 
 .reviews article > p {
@@ -282,27 +283,41 @@ section {
     color: #feca57;
 }
 
-.review-current {
+.reviews article.review-current {
     display: block;
     top: 0;
     left: calc(50vw - 150px);
 }
 
-.review-previous {
+.reviews article.review-previous {
     display: block;
     top: 20px;
     left: calc(50vw - 500px);
 }
 
-.review-next {
+.reviews article.review-next {
     display: block;
     top: 20px;
     left: calc(50vw + 200px);
 }
 
+.reviews article.review-very-next {
+    display: block;
+    top: 20px;
+    left: 200vw;
+    opacity: 0;
+}
+
+.reviews article.review-very-previous {
+    display: block;
+    top: 20px;
+    left: -200vw;
+    opacity: 0;
+}
+
 @media (max-width: 700px) {
-    .review-previous,
-    .review-next {
+    .reviews article.review-previous,
+    .reviews article.review-next {
         display: block;
         opacity: 0;
     }
