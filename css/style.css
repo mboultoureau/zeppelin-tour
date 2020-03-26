@@ -54,11 +54,10 @@ header > div {
     height: 100vh;
 }
 
-header > img {
-    position: absolute;
+.svg-container {
     width: 100%;
-    left: 0;
-    padding-top: -100;
+    position: absolute;
+    top: 122px;
 }
 
 /* SVG ZEPPELIN */
@@ -116,10 +115,24 @@ header > img {
         margin-left: -25px;
         text-align: center;
     }
+    .svg-container {
+        top: 300px;
+        transform: scale(1, 1.8);
+    }
 }
+
+@media screen and (max-width: 780px) {
+    .svg-container {
+        top: 290px;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .home-page header img {
         top: 480px;
+    }
+    .svg-container {
+        top: 255px;
     }
 }
 
@@ -130,6 +143,18 @@ header > img {
     .home-page header h1,
     .home-page header h3 {
         top: -40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .svg-container {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .svg-container {
+        top: 190px;
     }
 }
 
@@ -153,6 +178,15 @@ header > img {
         font-size: 1.1em;
         padding-left: 60px;
     }
+    .svg-container {
+        top: 180px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .svg-container {
+        top: 170px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -167,6 +201,15 @@ header > img {
         left: -35px;
         width: 25px;
     }
+    .svg-container {
+        top: 160px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .svg-container {
+        top: 150px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -174,10 +217,13 @@ header > img {
         font-size: 1em;
     }
     header > div {
-        height: 360px;
+        height: 300px;
     }
     .home-page header img {
-        top: 510px;
+        top: 400px;
+    }
+    .svg-container {
+        top: 140px;
     }
 }
 
@@ -392,12 +438,7 @@ nav {
     left: 0;
     right: 0;
     width: 100vw;
-    background: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(50, 40, 197, 1) 0%,
-        rgba(10, 95, 223, 1) 100%
-    );
+    background-color: #174ed7;
     display: flex;
     justify-content: space-between;
     z-index: 10;
