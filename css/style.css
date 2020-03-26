@@ -55,10 +55,12 @@ header > div {
 }
 
 header > img {
+    position: absolute;
     width: 100%;
     left: 0;
-    top: 100;
+    padding-top: -100;
 }
+
 /* SVG ZEPPELIN */
 .home-page header img {
     position: absolute;
