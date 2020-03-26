@@ -116,7 +116,7 @@ header > div {
         text-align: center;
     }
     .svg-container {
-        top: 300px;
+        top: 295px;
         transform: scale(1, 1.8);
     }
 }
@@ -151,13 +151,13 @@ header > div {
 
 @media screen and (max-width: 600px) {
     .svg-container {
-        top: 200px;
+        top: 195px;
     }
 }
 
 @media screen and (max-width: 560px) {
     .svg-container {
-        top: 190px;
+        top: 188px;
     }
     .home-page header img {
         top: 450px;
@@ -194,6 +194,9 @@ header > div {
     .svg-container {
         top: 180px;
     }
+    .about-us > h2 {
+        margin-top: -50px;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -226,6 +229,9 @@ header > div {
     .home-page header h3 {
         top: -140px;
     }
+    .about-us > h2 {
+        margin-top: -100px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -241,6 +247,9 @@ header > div {
     .home-page header h3 {
         top: -150px;
     }
+    .about-us > h2 {
+        margin-top: -100px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -255,6 +264,9 @@ header > div {
     }
     .svg-container {
         top: 140px;
+    }
+    .about-us > h2 {
+        margin-top: -10px;
     }
 }
 
