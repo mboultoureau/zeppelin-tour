@@ -51,9 +51,14 @@ h3 {
 
 /* HEADER */
 header > div {
-    height: 550px;
+    height: 100vh;
 }
 
+header > img {
+    width: 100%;
+    left: 0;
+    top: 100;
+}
 /* SVG ZEPPELIN */
 .home-page header img {
     position: absolute;
@@ -175,12 +180,6 @@ header > div {
 }
 
 .home-page header {
-    background: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(50, 40, 197, 1) 0%,
-        rgba(10, 95, 223, 1) 100%
-    );
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
