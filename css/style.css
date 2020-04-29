@@ -307,6 +307,21 @@ section {
 }
 
 /* ABOUT US */
+
+.about-us img {
+    border-radius: 50px;
+}
+
+.about-us div {
+    margin-right: 50px;
+    margin-left: 0px;
+}
+
+.about-us .inverse {
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
 @media (min-width: 700px) {
     .about-us div {
         display: flex;
