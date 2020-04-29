@@ -11,7 +11,7 @@
         />
     </head>
 
-    <body class="routes-page">
+    <body class="booking-page">
         <nav role="navigation">
             <div id="menuToggle">
                 <input type="checkbox" />
@@ -32,7 +32,27 @@
                 </ul>
             </div>
         </nav>
-        <main></main>
+        <main>
+            <h1>Ready to travel ?</h1>
+            <select id="title" name="title">
+                <option value="" selected>Select your travel</option>
+
+                <option value="Mr">Mr</option>
+                <option value="Miss">Miss</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+            </select>
+            <form action="">
+                <input type="text" placeholder="Enter your name" id="name" />
+                <input type="text" placeholder="Your email adress" id="email" />
+                <textarea
+                    type="text"
+                    placeholder="Additionnal information"
+                    id="additionnal"
+                ></textarea>
+                <input type="submit" value="Send" id="send" />
+            </form>
+        </main>
         <!-- FOOTER -->
         <footer>
             <div>

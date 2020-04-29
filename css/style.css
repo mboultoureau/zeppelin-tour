@@ -12,6 +12,9 @@ body {
     scroll-behavior: smooth;
 }
 
+main {
+    min-height: calc(100vh - 378px);
+}
 /* TITLES */
 h1 {
     font-weight: 700;
@@ -494,6 +497,71 @@ iframe {
     .routes-page main,
     iframe {
         min-height: calc(100vh - 122px);
+    }
+}
+/* BOOKING */
+
+.booking-page select {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    text-align-last: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 25px;
+}
+
+.booking-page h1 {
+    position: relative;
+    color: #333;
+    margin: 140px auto 0px auto;
+    letter-spacing: 1px;
+}
+
+.booking-page input {
+    margin-bottom: 25px;
+}
+
+#name {
+    width: 400px;
+    height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-left: 10px;
+}
+
+#email {
+    width: 400px;
+    height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-left: 10px;
+}
+
+#additionnal {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    height: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-left: 10px;
+    min-height: 150px;
+    resize: vertical;
+    padding-top: 10px;
+}
+
+#send {
+    width: 100px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .booking-page h1 {
+        margin-top: 120px;
     }
 }
 
