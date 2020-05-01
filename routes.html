@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Routes - Zeppelin Tour</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Routes - Zeppelin Tour</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
-</head>
-
-<body class="routes-page">
-    <nav role="navigation">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="img/logo.svg" alt="Zeppelin" />
-            <ul id="menu">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./routes.html">
-                    <li>Routes</li>
-                </a>
-                <a href="./booking.html">
-                    <li>Booking</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <div id="map"></div>
-        <section class="routes">
-            <h1>Routes</h1>
-            <div class="yosemite">
-                <p>Yosemite National Park</p>
-                <p><span>★</span> 4.9</p>
+    <body class="routes-page">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <img src="img/logo.svg" alt="Zeppelin" />
+                <ul id="menu">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./routes.html">
+                        <li>Routes</li>
+                    </a>
+                    <a href="./booking.html">
+                        <li>Booking</li>
+                    </a>
+                </ul>
             </div>
-            <div class="grand-canyon">
-                <p>Grand Canyon</p>
-                <p><span>★</span> 4.7</p>
+        </nav>
+        <main>
+            <div id="map"></div>
+            <section class="routes">
+                <h1>Routes</h1>
+                <div class="yosemite">
+                    <p>Yosemite National Park</p>
+                    <p><span>★</span> 4.9</p>
+                </div>
+                <div class="grand-canyon">
+                    <p>Grand Canyon</p>
+                    <p><span>★</span> 4.7</p>
+                </div>
+                <div class="San-Francisco">
+                    <p>San Francisco</p>
+                    <p><span>★</span> 4.6</p>
+                </div>
+                <div class="Seattle">
+                    <p>Seattle</p>
+                    <p><span>★</span> 4.8</p>
+                </div>
+                <div class="Los-Angeles">
+                    <p>Los Angeles</p>
+                    <p><span>★</span> 4.5</p>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/routes.html">Routes</a></li>
+                    <li><a href="/booking.html">Booking</a></li>
+                </ul>
             </div>
-        </section>
-    </main>
-    <!-- FOOTER -->
-    <footer>
-        <div>
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/routes.html">Routes</a></li>
-                <li><a href="/booking.html">Booking</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Follow us</h3>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg"></i> Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-lg"></i> Instagram</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/"><i class="fa fa-twitter fa-lg"></i> Twitter</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+            <div>
+                <h3>Follow us</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/"
+                            ><i class="fa fa-facebook fa-lg"></i> Facebook</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/"
+                            ><i class="fa fa-instagram fa-lg"></i> Instagram</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/"
+                            ><i class="fa fa-twitter fa-lg"></i> Twitter</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
-    <script src="js/map.js"></script>
-</body>
-
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+        <script src="js/map.js"></script>
+    </body>
 </html>
