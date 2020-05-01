@@ -320,40 +320,42 @@ section {
 
 /* ABOUT US */
 
-.about-us img {
-    border-radius: 50px;
+.about-us h2 {
+    padding-bottom: 20px;
 }
 
 .about-us div {
-    margin-right: 50px;
-    margin-left: 0px;
+    display: flex;
+    margin: 10px 5px;
 }
 
-.about-us .inverse {
-    margin-left: 50px;
-    margin-right: 0px;
+.about-us p {
+    padding: 20px;
 }
 
-@media (min-width: 700px) {
+.about-us img {
+    display: block;
+    height: auto;
+    width: 50%;
+    border-radius: 1em;
+}
+
+.about-us div:nth-child(3) img {
+    order: 1;
+}
+
+@media (max-width: 700px) {
     .about-us div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-us .inverse img {
-        order: 1;
+        flex-direction: column;
     }
 
     .about-us img {
-        min-width: 50%;
+        width: 100%;
     }
-}
+    .about-us div:nth-child(3) img {
+        order: 0;
+    }
 
-@media (min-width: 1000px) {
-    .about-us {
-        padding: 10px 100px;
-    }
 }
 
 /* REVIEW */
