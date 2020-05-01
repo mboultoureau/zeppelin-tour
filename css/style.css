@@ -523,7 +523,7 @@ iframe {
     position: relative;
     width: 400px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align-last: center;
     left: 50%;
     transform: translateX(-50%);
@@ -533,7 +533,7 @@ iframe {
 .booking-page h1 {
     position: relative;
     color: #333;
-    margin: 140px auto 0px auto;
+    margin: 170px auto 0px auto;
     letter-spacing: 1px;
 }
 
@@ -574,7 +574,7 @@ iframe {
     height: 40px;
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
