@@ -759,7 +759,7 @@ nav > div > img {
     border: 2px solid #2834ca;
     border-radius: 50px;
     box-sizing: border-box;
-    top: 88%;
+    top: 91vh;
 }
 #buttonbottom a span::before {
     position: absolute;
