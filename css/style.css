@@ -8,8 +8,8 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
-    overflow-x: hidden;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 main {
@@ -427,6 +427,31 @@ section {
     opacity: 0;
 }
 
+.buttons {
+    padding-bottom: 50px;
+    margin-top: -60px;
+    z-index: 0;
+}
+
+#review-previous-button {
+    text-decoration: none;
+    color: #f3f8fa;
+    background-color: #333;
+    padding: 5px 12px;
+    border-radius: 60px;
+    font-size: 2em;
+    margin-right: 25px;
+}
+
+#review-next-button {
+    text-decoration: none;
+    color: #f3f8fa;
+    background-color: #333;
+    padding: 5px 12px;
+    border-radius: 60px;
+    font-size: 2em;
+    margin-left: 25px;
+}
 @media (max-width: 700px) {
     .reviews article.review-previous,
     .reviews article.review-next {
