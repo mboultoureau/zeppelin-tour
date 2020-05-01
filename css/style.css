@@ -58,8 +58,12 @@ h3 {
 }
 
 /* HEADER */
+header {
+    position: relative;
+}
+
 header > div {
-    height: 100vh;
+    height: 600px;
 }
 
 .svg-container {
@@ -810,7 +814,7 @@ nav > div > img {
     border: 2px solid #2834ca;
     border-radius: 50px;
     box-sizing: border-box;
-    top: 91vh;
+    top: 90%;
 }
 #buttonbottom a span::before {
     position: absolute;
