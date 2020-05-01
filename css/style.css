@@ -119,14 +119,14 @@ header > div {
         text-align: center;
     }
     .svg-container {
-        top: 295px;
+        top: 252px;
         transform: scale(1, 1.8);
     }
 }
 
 @media screen and (max-width: 780px) {
     .svg-container {
-        top: 280px;
+        top: 245px;
     }
 }
 
@@ -135,7 +135,7 @@ header > div {
         top: 480px;
     }
     .svg-container {
-        top: 255px;
+        top: 230px;
     }
 }
 
@@ -150,17 +150,20 @@ header > div {
     header > div {
         height: 500px;
     }
+    .svg-container {
+        top: 220px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .svg-container {
-        top: 195px;
+        top: 167px;
     }
 }
 
 @media screen and (max-width: 560px) {
     .svg-container {
-        top: 188px;
+        top: 160px;
     }
     .home-page header img {
         top: 450px;
@@ -195,7 +198,7 @@ header > div {
         padding-left: 60px;
     }
     .svg-container {
-        top: 180px;
+        top: 150px;
     }
     .about-us > h2 {
         margin-top: -50px;
@@ -204,7 +207,7 @@ header > div {
 
 @media screen and (max-width: 470px) {
     .svg-container {
-        top: 170px;
+        top: 140px;
     }
 }
 
@@ -221,7 +224,7 @@ header > div {
         width: 25px;
     }
     .svg-container {
-        top: 160px;
+        top: 135px;
     }
     .home-page header img {
         top: 430px;
@@ -239,7 +242,7 @@ header > div {
 
 @media screen and (max-width: 375px) {
     .svg-container {
-        top: 150px;
+        top: 130px;
     }
     .home-page header img {
         top: 420px;
@@ -266,7 +269,7 @@ header > div {
         top: 420px;
     }
     .svg-container {
-        top: 140px;
+        top: 125px;
     }
     .about-us > h2 {
         margin-top: -10px;
