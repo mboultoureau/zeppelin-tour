@@ -319,11 +319,14 @@ section {
 }
 
 /* ABOUT US */
-
+#about-us img, #about-us p {
+    z-index: 3;
+}
 
 .about-us div {
     display: flex;
     margin: 10px 5px;
+    max-width: 900px;
 }
 
 .about-us p {
@@ -335,6 +338,7 @@ section {
     height: auto;
     width: 50%;
     border-radius: 1em;
+    max-width: 500px;
 }
 
 .about-us div:nth-child(2) {
@@ -358,6 +362,8 @@ section {
     }
 
 }
+
+
 
 /* REVIEW */
 .reviews {
