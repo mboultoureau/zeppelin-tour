@@ -508,6 +508,12 @@ footer a {
     margin-top: 122px;
 }
 
+@media screen and (max-width: 600px) {
+    .routes-page main {
+        margin-top: 75px;
+    }
+}
+
 .routes {
     display: flex;
     flex-direction: column;
@@ -549,6 +555,12 @@ footer a {
     .routes-page main,
     iframe {
         min-height: calc(100vh - 122px);
+    }
+}
+
+@media (max-width: 1000px) {
+    #map {
+        width: 100vw;
     }
 }
 /* BOOKING */
