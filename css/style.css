@@ -128,14 +128,14 @@ header > div {
         text-align: center;
     }
     .svg-container {
-        top: 252px;
+        top: 245px;
         transform: scale(1, 1.8);
     }
 }
 
 @media screen and (max-width: 780px) {
     .svg-container {
-        top: 245px;
+        top: 240px;
     }
 }
 
@@ -144,7 +144,7 @@ header > div {
         top: 480px;
     }
     .svg-container {
-        top: 230px;
+        top: 220px;
     }
 }
 
@@ -166,13 +166,13 @@ header > div {
 
 @media screen and (max-width: 600px) {
     .svg-container {
-        top: 167px;
+        top: 157px;
     }
 }
 
 @media screen and (max-width: 560px) {
     .svg-container {
-        top: 160px;
+        top: 150px;
     }
     .home-page header img {
         top: 450px;
