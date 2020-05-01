@@ -525,7 +525,7 @@ footer a {
     position: relative;
     width: 400px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align-last: center;
     left: 50%;
     transform: translateX(-50%);
@@ -535,7 +535,7 @@ footer a {
 .booking-page h1 {
     position: relative;
     color: #333;
-    margin: 140px auto 0px auto;
+    margin: 170px auto 0px auto;
     letter-spacing: 1px;
 }
 
@@ -576,7 +576,7 @@ footer a {
     height: 40px;
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -744,5 +744,80 @@ nav > div > img {
     }
     nav {
         height: 75px;
+    }
+}
+
+/* MOUSE BOTTOM */
+#buttonbottom a {
+    padding-top: 0;
+}
+#buttonbottom a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #2834ca;
+    border-radius: 50px;
+    box-sizing: border-box;
+    top: 91vh;
+}
+#buttonbottom a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #2834ca;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sdb10 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #buttonbottom a span {
+        top: 92%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #buttonbottom a span {
+        display: none;
     }
 }
