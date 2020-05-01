@@ -1,9 +1,9 @@
 const locations = {
     yosemite: [-119.3, 37.66],
     'grand-canyon': [-112.77804698418501, 36.36352471769502],
-    'San-Francisco': [-122.321997, 37.713531],
-    Seattle: [-122.354736, 47.598755],
-    'Los-Angeles': [-118.243103, 34.051522],
+    'san-francisco': [-122.321997, 37.713531],
+    seattle: [-122.354736, 47.598755],
+    'los-angeles': [-118.243103, 34.051522],
 };
 
 const paths = [
@@ -41,7 +41,7 @@ const paths = [
         ],
     },
     {
-        name: 'San-Francisco',
+        name: 'san-francisco',
         color: '#e74c3c',
         coordinates: [
             [-122.481031, 37.639799],
@@ -53,7 +53,7 @@ const paths = [
         ],
     },
     {
-        name: 'Seattle',
+        name: 'seattle',
         color: '#e74c3c',
         coordinates: [
             [-122.178955, 47.361153],
@@ -64,7 +64,7 @@ const paths = [
         ],
     },
     {
-        name: 'los-Angeles',
+        name: 'los-angeles',
         color: '#e74c3c',
         coordinates: [
             [-118.619385, 34.070862],
@@ -125,5 +125,16 @@ document.querySelectorAll('.routes div').forEach((route) => {
             center: locations[e.target.classList[0]],
             essential: true, // this animation is considered essential with respect to prefers-reduced-motion
         });
+        listroutes = [
+            '.yosemite',
+            '.grand-canyon',
+            '.san-francisco',
+            '.seattle',
+            '.los-angeles',
+        ];
+        for (var i in listroutes) {
+            $(listroutes[i]).removeClass('backgroundroutes');
+        }
+        $('.' + e.target.classList[0]).addClass('backgroundroutes');
     });
 });

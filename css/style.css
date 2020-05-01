@@ -521,6 +521,13 @@ footer a {
     cursor: pointer;
 }
 
+.routes div:hover {
+    background-color: rgb(219, 219, 219);
+}
+.backgroundroutes {
+    background-color: rgb(219, 219, 219);
+}
+
 .routes p {
     pointer-events: none;
 }
