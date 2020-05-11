@@ -653,6 +653,11 @@ footer a {
     }
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 /* MENU MOBILE */
 nav {
     position: fixed;
